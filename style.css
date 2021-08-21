@@ -1,0 +1,138 @@
+@font-face {
+    src: url(./font/Oxygen-Regular.ttf);
+    font-family: oxygen;
+}
+
+:root {
+    /* CSS HEX */
+--bon-jour: #ecebec;
+--indigo: #6153d6;
+--biloba-flower: #aca4ee;
+--dull-lavender: #9b94df;
+--dull-lavender: #9c8ce5;
+--green-white: #edf0e4;
+--perfume: #c9c2fa;
+--hawkes-blue: #d4d4fc;
+--perano: #bcbcf5;
+}
+
+
+
+
+/*Global Styling*/
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: oxygen, sans-serif;
+}
+
+body {
+    font-family: var(--ff-secondary);
+    background: var(--bon-jour);
+    color: var(--clr-grey-1);
+    line-height: 1.5;
+    font-size: 0.875rem;
+  }
+
+ul {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    letter-spacing: 0.10rem;
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+    
+
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  h4 {
+    font-size: 0.875rem;
+  }
+
+  nav{
+      height: 150px;
+      background-color: var(--perfume);
+      display: flex;
+      justify-content: center;
+  }
+  p{
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+  }
+
+  #message-el{
+      font-style: italic;
+  }
+
+
+  #logo{
+      height: 150px;
+      
+  }
+
+
+  main{
+      height: 100vh;
+      display: grid;
+      place-items: center;
+      background-color: #016f32;
+  }
+
+  #heading{
+      color: goldenrod;
+  }
+
+  .btn{
+      width: 150px;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 1.2rem;
+      box-shadow: 0 0 0.2rem #111;
+      letter-spacing: 0.15rem;
+      cursor: pointer;
+      border-radius: 0.5rem;
+      font-weight: bold;
+      margin: 10px;
+      background-color: goldenrod;
+      color: #016f32;
+      padding: 5px 0;
+      font-weight: bold;
+      border: none;
+  }
+
+  .btn-container{
+      display: flex;
+      flex-direction: column;
+  }
+
+
+
+  @media screen and (min-width: 658px) {
+    .btn-container{
+        display: flex;
+        flex-direction: row;
+    }
+    nav{
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
